@@ -8,17 +8,18 @@ function makeGreetings(age){
     
     var dd = parseInt(ds.substr(ds.length-1));
     
-    if(age>4&&age<21){    
-        dayName= ' лет';
-    }else if(dd==1){    
-        dayName= ' год';
-    }else if(dd==2||dd==3||dd==4){
-        dayName=' года'; 
+    if(age > 4 && age < 21){    
+        dayName = ' лет';
+    }else if(dd === 1){    
+        dayName = ' год';
+    }else if(dd >=2 && dd <= 4){
+        dayName =' года'; 
     }else{  
-         dayName=' лет'; 
+         dayName =' лет'; 
     }
     return "Мой возраст " + age + dayName ;
 }
+console.log(makeGreetings(3));
 
 // #2
 
@@ -29,6 +30,20 @@ function splitArray(arr, num){
     }
     return arr1;
 }
+
+/* function splitArray(arr, num){   
+    var result = [];
+
+    if(num < 1) {   
+        return
+    }
+    for( var i = 0; i < arr.length; i += num){  
+        result.push(arr.slice(i, i+num))
+    }
+    return result;
+}
+
+*/
 
 // #3
 
@@ -58,3 +73,29 @@ for( var i = 0; i < res.length; i += 1){
 return result
 }
 
+/*  
+    function transformData(data){   
+        var result = [];
+
+        for( var i = 0; i < data.length; i += 1){   
+            if(data[i].mark > 5)
+            result[data[i].login] = (data[i].firstName + " " + data[i].lastName).trim();
+        }
+
+        return result;
+    }
+
+function addInfinite(a) { 
+    
+     
+    function inner(b){ 
+        inner.result += b;
+
+        return inner;
+    };
+    inner.result = a;
+    
+    return inner;
+}
+
+    */
