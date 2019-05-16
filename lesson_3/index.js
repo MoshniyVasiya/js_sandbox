@@ -115,7 +115,7 @@ class Line {
         return 'Line(' + this.point1.toString() + '-' + this.point2.toString() + ')'; 
     }
     length() {  
-                                                    // 9                                                       // 15.21
+                                                                                             
         return Math.sqrt(Math.pow((this.point2.getX() - this.point1.getX()), 2) + Math.pow((this.point2.getY() - this.point1.getY()), 2))
     }
 
@@ -139,12 +139,7 @@ class WeightedPoint extends Point{
 
 }
 
-const point1 = new Point(2, 3.4);
-const point2 = new WeightedPoint(-1, 0.5, 3);
-const line = new Line(point1, point2);
 
-console.log(line.toString())
-console.log(line.length())
 
 
 
