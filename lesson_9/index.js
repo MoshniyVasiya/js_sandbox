@@ -55,8 +55,8 @@ setText("Вы сделали домашнее задание? Y / N")
 
 waitForAnswer()
     
-    .then(() => setText("Так держать"))
-    .catch(() => setText("Нужно подтянуть"));
+    .then(() => setText("Так держать!"))
+    .catch(() => setText("Нужно подтянуть("));
 
 
 
