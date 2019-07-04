@@ -65,7 +65,7 @@ function updateData(id, data) {
             'versioning': 'false',
                
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify([].concat(data, document.getElementById('todo-input').value)),
     }) 
 }
 
@@ -84,6 +84,7 @@ const input = document.querySelector('input');
 const ol = document.querySelector('ol')
 
 button.addEventListener('click', () => { 
+    if(input.value !== ''){
     let arr = [];  
     let li = document.createElement('li');
     ol.append(li);
@@ -91,11 +92,16 @@ button.addEventListener('click', () => {
     li.innerHTML = input.value;
     
     arr.push(input.value);
-    console.log(arr)
     updateData(id, arr)
 
-    return input.value = '';
+    input.value = '';
+    }else{  
+        input.value = 'Поле не должно быть пустым!'
+    }
 })
 
 
 
+window.addEventListener('load', () => {
+    getData(id).then(data => console.log(data))
+})
