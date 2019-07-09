@@ -1,7 +1,5 @@
 import React from 'react';
 
-const utf = 'U+1F'
-
 export default class WrapInEmoji extends React.Component{
 	constructor(){
 		super();
@@ -45,7 +43,7 @@ export default class WrapInEmoji extends React.Component{
 		return(
 		<div>
 			<span onClick={this.leftEmoji}>{this.state.left}</span>
-				{this.props.children}
+			{this.props.children}
 			<span onClick={this.rightEmoji}>{this.state.right}</span>
 		</div>
 		)
