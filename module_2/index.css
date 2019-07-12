@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+#container { 
+    max-width: 315px;
+    margin: 0 auto;
+    padding: 0 30px
+}
+#green_button {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(125.58deg, #BAFB67 -5.37%, #00D23A 196.64%);
+    border-radius: 50%;
+    border: 0;
+
+}
+
+label {
+    text-transform: uppercase;
+    display: block;
+
+}
+
+button {
+    width: 315px;
+    height: 56px;
+    background: linear-gradient(166.04deg, #BAFB67 -5.37%, #00D23A 196.64%);
+    border-radius: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+span {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    color: #445984;
+}
+a{  
+    text-decoration: none;
+}
