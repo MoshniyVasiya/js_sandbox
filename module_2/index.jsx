@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import First from './first' ;
 import Second from './second';
 import Third from './third';
+import Input from './input';
 
 class Main extends React.Component {    
     constructor() { 
@@ -57,7 +58,5 @@ render() {
 
 }
 ReactDOM.render((   
-
     <Main ></Main>
-
 ), document.getElementById('root'))
